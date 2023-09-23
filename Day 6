@@ -1,0 +1,15 @@
+int numberOfCars(int[] p, int[] s) {
+    int noOfCars=p.length;
+    Int extraSeats=0;
+
+    for(int i=0;i<p.length;i++) {
+        extraSeats+= (s[i] - p[i]) 
+    } 
+    for(int i=0;i<p.length;i++) { 
+        if(extraSeats-p[i] >=0){
+            extraSeats-= p[i] ;
+            noOfCars--;
+        }
+    }
+    return noOfCars;
+   } 
